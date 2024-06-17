@@ -41,6 +41,7 @@ const Hero = () => {
             className="pointer-events-none"
           >
             <source src={videoSrc} type="video/mp4" />
+            Adding a new Line to check upstream
           </video>
         </div>
       </div>
