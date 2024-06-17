@@ -41,7 +41,7 @@ const Hero = () => {
             className="pointer-events-none"
           >
             <source src={videoSrc} type="video/mp4" />
-            Adding a new Line to check upstream
+            Now we are adding a new branch
           </video>
         </div>
       </div>
