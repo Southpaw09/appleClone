@@ -25,6 +25,11 @@ const Hero = () => {
       opacity: 1,
       delay: 0.5,
     });
+    gsap.to("#cta", {
+      opacity: 1,
+      delay: 2,
+      y: -50,
+    });
   }, []);
   return (
     <section className="w-full nav-height bg-blac relative">
@@ -41,9 +46,17 @@ const Hero = () => {
             className="pointer-events-none"
           >
             <source src={videoSrc} type="video/mp4" />
-            Now we are adding a new branch
           </video>
         </div>
+      </div>
+      <div
+        id="cta"
+        className="flex flex-col items-center opacity-0 translate-y-20"
+      >
+        <a href="#highlights" className="btn">
+          Buy
+        </a>
+        <p className="font-normal text-xl">From $199/month or $999</p>
       </div>
     </section>
   );
